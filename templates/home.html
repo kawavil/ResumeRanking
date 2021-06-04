@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>Resume Ranking</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  .container {
+  position: absolute;
+}
+
+.job_description {
+  position: absolute;
+  top: 100%;
+  left: 3%;
+  /* margin: -25px 0 0 -25px;  apply negative top and left margins to truly center the element */
+}
+.filterbutton{
+  position: absolute;
+  top: 800%;
+  left: 7%;
+  margin: -25px 0 0 -25px;
+
+}
+
+</style>
+</head>
+<body>
+
+  <div class="container">
+        <form action="{{ url_for('resumes')}}" method="post">
+            <div class="job_description">
+              <label for="job_desc">Job Description</label>
+              <input type="text" class="form-control" id="job_desc" name="job_desc">
+            </div>
+
+
+            <div class="filterbutton">
+              <button type="submit" class="btn btn-default text-center">Filter Resumes</button>
+              <!--<button type="submit" class="btn btn-default text-center" data-toggle="modal" data-target="#myModal">Get
+                  Recommendation</button>-->
+            </div>
+        </form>
+        {% if tables %}
+            <center>
+                <h1><b>Ranked Resumes</b></h1>
+                {% for table in tables %}
+                    {{titles[loop.index]}}
+                    {{ table|safe }}
+                {% endfor %}
+            </center>
+        {% endif %}
+
+    </div>
+
+
+</body>
+</html>

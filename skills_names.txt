@@ -1,0 +1,270 @@
+Time management
+Effective communication
+Emotional intelligence
+Conflict management
+Teamwork skills
+Stress management
+Problem-solving
+Productivity
+organization
+Critical thinking
+Attention to detail
+Adaptability
+Data analysis
+Web analytics 
+SEO
+SEM
+HTML
+CSS
+Wordpress
+Email marketing
+Web scraping
+CRO
+A/B Testing
+Data visualization
+pattern-finding
+critical thinking
+Search Engine 
+Keyword Optimization
+Project/campaign management
+Social media marketing
+mobile marketing
+Paid social media advertisements
+B2B Marketing
+The 4 P-s of Marketing
+Consumer Behavior Drivers
+Brand management
+Creativity
+Copywriting
+Storytelling
+Sales
+CMS Tools
+Six Sigma techniques
+The McKinsey 7s Framework
+Porter's Five Forces
+PESTEL 
+Emotional Intelligence
+stress handling
+Motivation
+Task delegation
+Technological savviness
+People management
+Business Development
+Strategic Management
+Negotiation
+Planning
+Proposal writing
+Problem-solving
+Innovation
+Charisma
+Customer Relationship Management (CRM)
+Cold-calling
+Negotiation
+Public speaking
+Closing
+Lead generation
+Buyer-Responsive selling
+Buyer engagement
+Product knowledge
+Persuasion
+Effective communication and sociability
+Empathy
+Social media/digital communication
+Teamwork
+Time management
+Adobe Illustrator
+InDesign
+Photoshop
+Dreamweaver
+Infographics
+Photo editing 
+Typography: spacing
+Typography: line height
+Typography: layout
+Typography: choosing fonts
+Storyboarding
+communications
+Logo creation
+Digital printing
+Creativity
+Interactive media design
+Color sense & theory
+Ad design
+Active listening
+Microsoft Word
+Microsoft Excel
+Microsoft Access
+Publisher
+Outlook
+Microsoft Powerpoint
+paper management
+Data entry
+Bookkeeping through Excel
+Bookkeeping through TurboTax
+Research analysis
+data analysis
+interface communication
+Technical writing
+Cloud networking
+file sharing
+Microsoft Excel (Advanced)
+Enterprise Resource Planning 
+Big Data Analysis & SQL
+Know Your Customers (KYC)
+Cognos Analytics (IBM)
+Visual Basic
+Accounting Software
+Revenue recognition
+Anti Money Laundering
+Clear communication
+General business knowledge
+Numerical competence
+Accuracy
+Attention to detail 
+Updated curriculum knowledge
+Communication
+Educational platforms
+Stress management
+Technological & digital literacy
+Patience
+Critical thinking
+Enthusiasm
+Motivation
+HTML/CSS
+CSS preprocessors
+Javascript
+Wordpress
+Graphic User Interfaces
+GUI
+Git/Version control 
+Github
+gitlab
+Search Engine Optimization
+SEO
+Application Programming Interface
+API
+Adobe Photoshop
+InDesign
+Content Management Systems
+CMS
+Testing/Debugging
+Responsive design principles
+SQL
+Hive
+R
+Python
+Scala
+Matlab
+STATA
+SPSS
+SAS
+Data Mapping
+Entity Relationship Diagrams
+ER Diagrams
+Wireframes
+Big Data tools 
+Microsoft Vision
+Agile Business Analysis
+data science
+Machine learning 
+Deep learning
+NLP
+Natural language processing
+computer vision
+Recommendor system
+Logistic regression
+linear regression
+SVM
+support vector machine
+decision tree
+random forest
+xgboost
+ensemble 
+stacking
+voting 
+classification
+regression
+neural network
+spark
+hadoop
+big data
+pig
+hive
+kafka
+no sql
+mongo db
+database
+databases
+statistical
+statistics
+hypothesis testing
+EDA
+Exploratory data analysis
+data analysis
+tableau
+power bi
+google cloud platform
+GCP
+aws
+azure
+data cleaning
+data preprocessing
+text analysis
+text analytics
+embedding
+vectorization
+spacy
+nltk
+time series
+opencv
+tensorflow
+keras
+sklearn
+pytorch
+pycharm
+jupyter notebook
+spyder
+sublime text
+excel
+word
+power point
+oral communication
+written communication
+BERT
+CNN
+RCNN
+LSTM
+cloud computing
+feature selection
+hyper parameter tuning
+AB testing
+auto encoder
+yolo
+object detection
+fraud detection
+health care
+System Context Diagrams
+Business Process Modeling
+Technical communication
+non-technical communication
+Mathematics
+CPR
+Patient care and assistance
+Paperwork/record-keeping abilities
+Compassion
+Advanced Cardiac Life Support
+ACLS
+Telemetry
+Attention to detail
+Physical endurance 
+Acute care
+Infection control
+Surgery preparation
+Effective communication
+Teamwork
+Responsibility
+Creativity
+Problem-solving
+Leadership
+Extroversion
+People skills

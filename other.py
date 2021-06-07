@@ -12,8 +12,8 @@ import PyPDF2
 
 PROJECT_DIR = os.path.dirname(os.getcwd()) + '/'
 
-vacatures_df = pd.read_csv(PROJECT_DIR + 'data/aanvragen_per_klant.csv')
-skill_pattern_path = PROJECT_DIR + "data/skill_patterns.jsonl"
+#vacatures_df = pd.read_csv(PROJECT_DIR + 'data/aanvragen_per_klant.csv')
+skill_pattern_path = PROJECT_DIR + "skills_set.jsonl"
 
 # Load pre-trained Dutch language model
 nlp = nl_core_news_sm.load()
@@ -25,7 +25,7 @@ with jsonlines.open(PROJECT_DIR + "data/skill_patterns.jsonl") as f:
 # File Extension. set as 'pdf' or as 'doc(x)'
 extension = 'pdf'
 
-
+""""
 def extract_text_from_pdf(file):
     '''Opens and reads in a PDF file from path'''
 
@@ -43,6 +43,7 @@ def extract_text_from_word(filepath):
 
     return txt.replace('\n', ' ').replace('\t', ' ')
 
+"""
 
 def add_newruler_to_pipeline(skill_pattern_path):
     '''Reads in all created patterns from a JSONL file and adds it to the pipeline after PARSER and before NER'''
@@ -50,13 +51,13 @@ def add_newruler_to_pipeline(skill_pattern_path):
     new_ruler = EntityRuler(nlp).from_disk(skill_pattern_path)
     nlp.add_pipe(new_ruler, after='parser')
 
-
+"""
 def visualize_entity_ruler(entity_list, doc):
     '''Visualize the Skill entities of a doc'''
 
     options = {"ents": entity_list}
     displacy.render(doc, style='ent', options=options)
-
+"""
 
 def create_skill_set(doc):
     '''Create a set of the extracted skill entities of a doc'''
@@ -64,15 +65,15 @@ def create_skill_set(doc):
     return set([ent.label_.upper()[6:] for ent in doc.ents if 'skill' in ent.label_.lower()])
 
 
-def create_skillset_dict(resume_names, resume_texts):
+"""def create_skillset_dict(resume_names, resume_texts):
     '''Create a dictionary containing a set of the extracted skills. Name is key, matching skillset is value'''
     skillsets = [create_skill_set(resume_text) for resume_text in resume_texts]
 
     return dict(zip(resume_names, skillsets))
+"""
 
-
-def match_skills(vacature_set, cv_set, resume_name):
-    """Get intersection of resume skills and job offer skills and return match percentage"""
+"""def match_skills(vacature_set, cv_set, resume_name):
+    # Get intersection of resume skills and job offer skills and return match percentage
 
     if len(vacature_set) < 1:
         print('could not extract skills from job offer text')
@@ -102,31 +103,31 @@ def create_tokenized_texts_list(extension):
         resume_names.append(resume.split('_')[0].capitalize())
 
     return resume_texts, resume_names
-
+"""
 
 add_newruler_to_pipeline(skill_pattern_path)
 
-resume_texts, resume_names = create_tokenized_texts_list(extension)
+#resume_texts, resume_names = create_tokenized_texts_list(extension)
 
-skillset_dict = create_skillset_dict(resume_names, resume_texts)
+# skillset_dict = create_skillset_dict(resume_names, resume_texts)
 
 # example of job offer text (string). Can input your own.
-vacature_text = vacatures_df[vacatures_df['soort_vacature'] == 'Data Scientist'].skills.iloc[13]
+# vacature_text = vacatures_df[vacatures_df['soort_vacature'] == 'Data Scientist'].skills.iloc[13]
 
 # Create a set of the skills extracted from the job offer text
-vacature_skillset = create_skill_set(nlp(vacature_text))
+#vacature_skillset = create_skill_set(nlp(vacature_text))
 
 # Create a list with tuple pairs containing the names of the candidates and their match percentage
-match_pairs = [match_skills(vacature_skillset, skillset_dict, name) for name in skillset_dict.keys()]
+# match_pairs = [match_skills(vacature_skillset, skillset_dict, name) for name in skillset_dict.keys()]
 
 # Sort tuples from high to low on match percentage
-match_pairs.sort(key=lambda tup: tup[1], reverse=True)
+# match_pairs.sort(key=lambda tup: tup[1], reverse=True)
 
 # Unpack tuples
-names, pct = zip(*match_pairs)
-
+# names, pct = zip(*match_pairs)
+"""
 # Plotting
-sns.set_theme(style='darkgrid')
+# sns.set_theme(style='darkgrid')
 
 fig, ax = plt.subplots(figsize=(12, 8))
 ax.set_title('Job offer match with candidates', fontsize=20)
@@ -137,3 +138,4 @@ sns.set(font_scale=1.5)
 sns.barplot(x=list(names), y=list(pct), color='b')
 
 plt.show()
+"""
